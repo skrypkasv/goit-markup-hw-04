@@ -94,14 +94,30 @@ body {
 }
 
 /* ссылки на соцсети */
-.list.social .link {
+.list.social .item {
   display: block;
   width: 44px;
   height: 44px;
   background-color: var(--primary-text-color);
-  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
 }
-.list.social .link:hover {
+.list.social .item:nth-child(1) {
+  background-image: url(../images/instagram.svg);
+}
+.list.social .item:nth-child(2) {
+  background-image: url(../images/twitter.svg);
+}
+.list.social .item:nth-child(3) {
+  background-image: url(../images/facebook.svg);
+}
+.list.social .item:nth-child(4) {
+  background-image: url(../images/linkedin.svg);
+}
+.list.social .item:hover {
   background-color: var(--accent-color);
 }
 
