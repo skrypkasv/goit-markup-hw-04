@@ -239,6 +239,29 @@ nav.container {
 .site-nav .contact:first-child {
   margin-right: 30px;
 }
+.site-nav .mail,
+.site-nav .tel {
+  display: inline-flex;
+  align-items: center;
+}
+.site-nav .mail::before,
+.site-nav .tel::before {
+  content: '';
+  margin-right: 10px;
+  width: 16px;
+  height: 15px;
+  /* background-color: tomato; */
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.site-nav .mail::before {
+  background-image: url(../images/envelope.svg);
+}
+.site-nav .tel::before {
+  background-image: url(../images/smartphone.svg);
+}
 /*  */
 /*  */
 /*  */
@@ -345,31 +368,35 @@ nav.container {
 }
 
 /*Позиционирование в "Особенности компании" */
-.features > .list {
+.features > .list-feature {
   display: flex;
 }
 .features .item:not(:last-child) {
   margin-right: 30px;
 }
-.img {
+.list-feature > .item::before {
+  display: block;
+  content: '';
   height: 120px;
   background-color: var(--secondary-white-color);
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px 70px;
 }
-.list > .item:nth-child(1) .img {
+.list-feature > .item:nth-child(1)::before {
   background-image: url(../images/antenna.svg);
 }
-.list > .item:nth-child(2) .img {
+.list-feature > .item:nth-child(2)::before {
   background-image: url(../images/clock.svg);
 }
-.list > .item:nth-child(3) .img {
+.list-feature > .item:nth-child(3)::before {
   background-image: url(../images/diagram.svg);
 }
-.list > .item:nth-child(4) .img {
+.list-feature > .item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
 }
+
 /*  */
 /*  */
 /*  */
