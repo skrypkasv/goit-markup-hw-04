@@ -312,6 +312,7 @@ nav.container {
 .features {
   padding: 94px 0px;
   border-bottom: 1px solid var(--border-color);
+  cursor: default;
 }
 .features .section-subtitle {
   margin-top: 30px;
@@ -333,26 +334,30 @@ nav.container {
 .features .item:not(:last-child) {
   margin-right: 30px;
 }
-.features > .list .link {
-  display: block;
-  width: 100%;
-}
-.features > .list img {
-  display: block;
-  border-style: none;
-  margin: auto;
-}
-.click-img {
-  display: flex;
-  width: 100%;
+
+.img {
   height: 120px;
   background-color: var(--secondary-white-color);
   border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.item:hover .click-img,
-.item:focus .click-img {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.list > .item:nth-child(1) .img {
+  background-image: url(../images/antenna.svg);
 }
+.list > .item:nth-child(2) .img {
+  background-image: url(../images/clock.svg);
+}
+.list > .item:nth-child(3) .img {
+  background-image: url(../images/diagram.svg);
+}
+.list > .item:nth-child(4) .img {
+  background-image: url(../images/astronaut.svg);
+}
+/*  */
+/*  */
+/*  */
+/*  */
 /*  */
 /*  */
 /*  */
