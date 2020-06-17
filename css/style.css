@@ -98,32 +98,48 @@ body {
   display: block;
   width: 44px;
   height: 44px;
-  background-color: var(--primary-text-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px;
   border-radius: 50%;
   cursor: pointer;
 }
-.list.social .item:nth-child(1) {
-  background-image: url(../images/instagram.svg);
-}
-.list.social .item:nth-child(2) {
-  background-image: url(../images/twitter.svg);
-}
-.list.social .item:nth-child(3) {
-  background-image: url(../images/facebook.svg);
-}
-.list.social .item:nth-child(4) {
-  background-image: url(../images/linkedin.svg);
-}
-.list.social .item:hover {
-  background-color: var(--accent-color);
+.join .list.social .item {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* background-color: var(--primary-text-color); */
 }
 
-a[aria-label]:hover,
-a[aria-label]:focus {
-  color: var(--accent-color);
+/* Для ссылок карточек */
+.list.social .item:nth-child(1) {
+  background-image: url(../images/instagram.png);
+}
+.list.social .item:nth-child(2) {
+  background-image: url(../images/twitter.png);
+}
+.list.social .item:nth-child(3) {
+  background-image: url(../images/facebook.png);
+}
+.list.social .item:nth-child(4) {
+  background-image: url(../images/linkedin.png);
+}
+
+/* Для ссылок футера */
+.join .list.social .item:nth-child(1) {
+  background-image: url(../images/instagram.svg);
+}
+.join .list.social .item:nth-child(2) {
+  background-image: url(../images/twitter.svg);
+}
+.join .list.social .item:nth-child(3) {
+  background-image: url(../images/facebook.svg);
+}
+.join .list.social .item:nth-child(4) {
+  background-image: url(../images/linkedin.svg);
+}
+.join .list.social .item:hover,
+.join .list.social .item:focus {
+  background-color: var(--accent-color);
 }
 /*  */
 /*  */
@@ -327,6 +343,7 @@ nav.container {
   /* outline: 1px solid navy; */
   /* background-color: plum; */
 }
+
 /*Позиционирование в "Особенности компании" */
 .features > .list {
   display: flex;
@@ -334,7 +351,6 @@ nav.container {
 .features .item:not(:last-child) {
   margin-right: 30px;
 }
-
 .img {
   height: 120px;
   background-color: var(--secondary-white-color);
@@ -553,6 +569,46 @@ address {
 .join .list.social {
   padding: 0px 0px;
 }
+.subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  --h: 50px;
+  min-width: 200px;
+  height: var(--h);
+  line-height: var(--h);
+  padding: 0px 28px 0px 29px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* Кнопка в футере "Подписаться" */
+.subscribe-button::after {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  content: '';
+  background-image: url(../images/telegram-icon.svg);
+  background-size: contain;
+  /* background-color: tomato; */
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.subscribe-button:active {
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+/* Copyright */
 .copyright {
   margin-top: 0px;
   margin-bottom: 0px;
