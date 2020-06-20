@@ -16,7 +16,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/flex.css" /> -->
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -41,11 +40,17 @@
         <ul class="list site-nav">
           <li class="contact">
             <a href="mailto:info@devstudio.com" class="mail">
+              <svg class="nav-icon">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contact">
             <a href="tel:+380961111111" class="tel">
+              <svg class="nav-icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -249,16 +254,33 @@
             <b class="call">присоединяйтесь</b>
             <ul class="list social">
               <li class="item">
-                <a href="" class="link" aria-label="Ссылка на Instagram"></a>
+                <a href="" class="link" aria-label="Ссылка на Instagram"
+                  ><svg class="icon-link">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram"
+                    ></use></svg
+                ></a>
               </li>
               <li class="item">
-                <a href="" class="link" aria-label="Ссылка на Twitter"></a>
+                <a href="" class="link" aria-label="Ссылка на Twitter">
+                  <svg class="icon-link">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a href="" class="link" aria-label="Ссылка на Facebook"></a>
+                <a href="" class="link" aria-label="Ссылка на Facebook">
+                  <svg class="icon-link">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="item">
-                <a href="" class="link" aria-label="Ссылка на LinkedIn"></a>
+                <a href="" class="link" aria-label="Ссылка на LinkedIn">
+                  <svg class="icon-link">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -266,6 +288,12 @@
           <!-- Подпишитесь на рассылку -->
           <div class="subscribe">
             <b class="call">Подпишитесь на рассылку</b>
+            <button class="subscribe-button" type="button">
+              Подписаться
+              <svg class="telegram-icon">
+                <use href="./images/symbol-defs.svg#icon-telegram-icon"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
